@@ -1,0 +1,27 @@
+---
+const base = import.meta.env.BASE_URL;
+const home = base.endsWith('/') ? base : `${base}/`;
+---
+
+<footer class="footer">
+  <div>
+    <div class="footer-brand">
+      GrowthForge<span class="brand-dot">.</span>
+    </div>
+
+    <p>
+      SEO, paid acquisition and conversion systems built around measurable growth.
+    </p>
+  </div>
+
+  <div class="footer-links">
+    <a href="mailto:hello@example.com">Email</a>
+    <a href={`${home}#services`}>Services</a>
+    <a href={`${home}#work`}>Case studies</a>
+    <a href={`${home}#tools`}>Free tools</a>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 GrowthForge Digital · Practice / Portfolio Project
+  </div>
+</footer>
